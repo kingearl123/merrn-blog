@@ -11,8 +11,9 @@ app.use(express.json());
 
 // routes
 app.get('/', (req, res) => {
-    res.send('hello world');
+    res.send('Hello, World!');
 });
-app.use('/api/blogs', RoutesBlog);  // Ubah '/Blog' menjadi '/api/blogs' agar konsisten
+
+app.use('/api/blogs', RoutesBlog); // Konsistensi endpoint
 
 module.exports = app;
