@@ -1,19 +1,18 @@
-import './App.css'
-import Navbar from './components/Navbar';
-import Home from './components/Home';
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
 import Article from './components/Article';
-import Footer from './components/Footer';
+import Footer from "./components/footer";
 
 function App() {
-
   return (
     <>
       <Navbar />
       <Home />
-      <Article/>
+    <Article />
       <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
