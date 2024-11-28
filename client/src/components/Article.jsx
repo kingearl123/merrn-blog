@@ -94,7 +94,7 @@ const Article = () => {
 
               <div
                 key={article.id}
-                className="bg-white border border-gray-200 rounded-lg shadow  dark:border-gray-700"
+                className="bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700"
               >
                 
                 <a href="#">
