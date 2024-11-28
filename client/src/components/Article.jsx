@@ -91,10 +91,12 @@ const Article = () => {
           {/* Articles Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {articles.slice(0, visibleCount).map((article) => (
+
               <div
                 key={article.id}
-                className="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+                className="bg-white border border-gray-200 rounded-lg shadow  dark:border-gray-700"
               >
+                
                 <a href="#">
                   <img
                     className="rounded-t-lg w-full h-48 object-cover"
@@ -104,7 +106,7 @@ const Article = () => {
                 </a>
                 <div className="p-5">
                   <a href="#">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-indigo-600">
                       {article.title}
                     </h5>
                   </a>
