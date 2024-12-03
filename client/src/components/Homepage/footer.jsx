@@ -2,12 +2,11 @@ const Footer = () => {
   return (
     
     <div className="max-w-screen-xl px-7 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8 bg-white">
-      
       <div className="flex justify-center mt-8 space-x-6">
         <a href="#f" className="text-gray-400 hover:text-gray-500">
-          <span className="sr-only">Facebook</span>
+          <span className="sr-only">Linkedin</span>
           <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
-            <path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" />
+              <path d="M22.225 0h-20.45C.997 0 0 .996 0 2.225v19.55C0 23.004.996 24 2.225 24h20.45C23.004 24 24 23.004 24 22.225v-19.55C24 .996 23.004 0 22.225 0zM7.147 20.452H3.539V9h3.608v11.452zm-1.804-13.1c-1.153 0-2.086-.935-2.086-2.086 0-1.151.934-2.086 2.086-2.086 1.151 0 2.086.935 2.086 2.086 0 1.151-.935 2.086-2.086 2.086zm16.819 13.1h-3.608v-5.775c0-1.375-.027-3.146-1.92-3.146-1.92 0-2.215 1.496-2.215 3.04v5.881h-3.608V9h3.465v1.563h.049c.48-.905 1.645-1.859 3.387-1.859 3.62 0 4.29 2.386 4.29 5.49v6.253z"/>
           </svg>
         </a>
         <a href="#i" className="text-gray-400 hover:text-gray-500">
