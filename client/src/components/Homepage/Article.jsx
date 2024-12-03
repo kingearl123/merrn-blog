@@ -1,18 +1,30 @@
 import { useState } from "react";
+import axios from "axios";
+
+axios.get("http://localhost:2000/api/blogs")
+  .then((Response) => {
+    console.log(Response);
+  })
+  .catch((Error) => {
+    console.log(Error);
+  });
 
 const Article = () => {
   // Daftar artikel
+
   const articles = [
     {
       id: 1,
       title: "Noteworthy Technology Acquisitions 2021",
-      description: "Here are the biggest enterprise technology acquisitions of 2021 so far.",
+      description:
+        "Here are the biggest enterprise technology acquisitions of 2021 so far.",
       image: "https://via.placeholder.com/400x200",
     },
     {
       id: 2,
       title: "Top Modern Technologies in 2023",
-      description: "Explore the cutting-edge technologies shaping the future of the digital world.",
+      description:
+        "Explore the cutting-edge technologies shaping the future of the digital world.",
       image: "https://via.placeholder.com/400x200",
     },
     {
@@ -24,7 +36,8 @@ const Article = () => {
     {
       id: 4,
       title: "The Future of Cloud Computing",
-      description: "Learn about the latest trends in cloud computing technology.",
+      description:
+        "Learn about the latest trends in cloud computing technology.",
       image: "https://via.placeholder.com/400x200",
     },
     {
@@ -54,7 +67,8 @@ const Article = () => {
     {
       id: 9,
       title: "Green Tech Innovations",
-      description: "Sustainable technologies paving the way for a greener future.",
+      description:
+        "Sustainable technologies paving the way for a greener future.",
       image: "https://via.placeholder.com/400x200",
     },
   ];
@@ -91,12 +105,10 @@ const Article = () => {
           {/* Articles Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {articles.slice(0, visibleCount).map((article) => (
-
               <div
                 key={article.id}
                 className="bg-white border border-gray-200 rounded-lg shadow dark:border-gray-700"
               >
-                
                 <a href="#">
                   <img
                     className="rounded-t-lg w-full h-48 object-cover"
