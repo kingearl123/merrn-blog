@@ -12,6 +12,10 @@ import InputBlog from "./components/CrudDataBlog/InputBlog";
 // modul halaman utama edit
 import EditBlog from "./components/CrudDataBlog/EditBlog";
 // end modul halaman utama edit
+// Modul Halaman Blog
+import Blogpages from "./components/BlogPage/Blogpages";
+import BlogHome from "./components/BlogHome"
+// End Modul Halaman Blog
 
 function App() {
   return (
@@ -23,6 +27,8 @@ function App() {
           <Route path="/dashboard" element={<Dashboard/>}></Route>
           <Route path="/input" element={<InputBlog/>}></Route>
           <Route path="/edit/:id" element={<EditBlog/>}></Route>
+          <Route path="/blogs/:id" element={<Blogpages/>}></Route>
+          <Route path="/blogs" element={<BlogHome/>}></Route>
       </Routes>
     </Router>
 

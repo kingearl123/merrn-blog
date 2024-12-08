@@ -14,6 +14,8 @@ app.get('/', (req, res) => {
     res.send('Hello, World!');
 });
 
+app.use('/uploads', express.static('uploads'));
+
 app.use('/api/blogs', RoutesBlog); // Konsistensi endpoint
 
 module.exports = app;
