@@ -8,6 +8,7 @@ const MainDashboard = () => {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
+  
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
@@ -53,6 +54,7 @@ const MainDashboard = () => {
         <table className="min-w-full bg-white border border-gray-300 mt-4">
           <thead>
             <tr className="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
+              <th className="py-3 px-6 text-left">No</th>
               <th className="py-3 px-6 text-left">Judul Artikel</th>
               <th className="py-3 px-6 text-left">Tanggal Post</th>
               <th className="py-3 px-6 text-left">Gambar</th>
@@ -62,11 +64,12 @@ const MainDashboard = () => {
             </tr>
           </thead>
           <tbody className="text-gray-600 text-sm font-light">
-            {blogs.map((blog) => (
+            {blogs.map((blog,index) => (
               <tr
                 key={blog.id || blog.title}
                 className="border-b border-gray-300 hover:bg-gray-100"
               >
+                <td className="py-3 px-6">{index+1}</td>
                 <td className="py-3 px-6">{blog.title}</td>
                 <td className="py-3 px-6">{blog.date}</td>
                 <td className="py-3 px-6">
